@@ -1,4 +1,6 @@
+package com.javafundamentals;
 public class Project1 {
+	
 	static private int EmpNo[] = { 1001, 1002, 1003, 1004, 1005, 1006, 1007 };
 	static private String EmpName[] = { "Ashish", "Sushma", "Rahul", "Chahat", "Ranjan", "Suman", "Tanmay" };
 	static private String JoinDate[] = { "01/04/2009", "23/08/2012", "12/11/2008", "29/01/2013", "16/07/2005",
@@ -75,12 +77,15 @@ public class Project1 {
 		int id = Integer.parseInt(args[0]);
 		if (employeeExist(id)) {
 			System.out.println("There is no employee with empid: " + id);
+			System.out.println("---------------------------------------");
+			
 		} else {
 			System.out.println("EmpNo: " + id);
 			System.out.println("EmpName: " + getEmpName(id));
 			System.out.println("Department: " + getDepart(id));
 			System.out.println("Designation: " + getDesignation(id));
 			System.out.println("Salary: " + getEmpSalary(id));
+			System.out.println("----------------------------------------");
 		}
 
 	}
